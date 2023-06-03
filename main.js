@@ -10,7 +10,7 @@ function toggleMenu() {
 }
 
 // removes menu when item clicked
-document.querySelectorAll(".nav__list").forEach(e => 
+document.querySelectorAll(".nav__list--mobile").forEach(e => 
     e.addEventListener("click", () =>{
         menu.classList.remove("active");   
     }) )
