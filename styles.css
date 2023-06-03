@@ -420,7 +420,7 @@ a{
 
 /*Media desktop*/
 
-@media (max-width:750px){
+@media (max-width:650px){
 .about__information--primary,
 .about__information--secondary{
     min-height: 435px;
@@ -428,7 +428,7 @@ a{
 
 }
 
-@media (min-width:750px){
+@media (min-width:650px){
     /*global*/
     p,a{
         font-size: 1.2rem;
@@ -520,7 +520,7 @@ a{
 
     .about__information--primary,
     .about__information--secondary{
-        width: 75%;
+        width: 100%;
         text-align: left;
     }
     .about__text,
@@ -562,6 +562,8 @@ a{
     .reviews__text{
         width: 82%;
     }
+
+ 
     /*projects*/
     .projects__grid{
         display: grid;
@@ -577,6 +579,13 @@ a{
         gap: 50px;
     }
 
+}
+
+@media(min-width: 800px){
+    .about__information--primary,
+    .about__information--secondary{
+        width: 80%;
+    }
 }
 
 @media (min-width:1000px){
