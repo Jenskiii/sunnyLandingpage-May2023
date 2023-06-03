@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="nav__header">
+      
+        <div class="nav__row row">
+          <div class="nav__logo--container">
+            <img src="./images/logo.svg" alt="sunnyside logo" class="nav__logo">
+            <img src="./images/icon-hamburger.svg" alt="hamburger" class="nav__hamburger" id="hamburger">
+          </div>
+
+          <ul class="nav__list--desktop">
+            <li class="nav__desktop--item nav__item"><a href="#about" class="nav__desktop--link nav__link">About</a></li>
+            <li class="nav__desktop--item nav__item"><a href="#services" class="nav__desktop--link nav__link">Services</a></li>
+            <li class="nav__desktop--item nav__item"><a href="#projects" class="nav__desktop--link nav__link">Projects</a></li>
+            <li class="nav__desktop--item nav__item--button nav__item"><a href="#contact" class="nav__link nav__desktop--button">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="nav__mobile--container">
+          <div class="bubble hidden container">
+            <ul class="nav__list--mobile">
+              <li class="nav__header--item nav__item"><a href="#about" class="nav__header--link nav__link">About</a></li>
+              <li class="nav__header--item nav__item"><a href="#services" class="nav__header--link nav__link">Services</a></li>
+              <li class="nav__header--item nav__item"><a href="#projects" class="nav__header--link nav__link">Projects</a></li>
+              <li class="nav__header--item nav__item--button nav__item"><a href="#" class="nav__link nav__header--button">Contact</a></li>
+            </ul>
+        </div>
+      </div>
+
+      </nav>
+
+      <div class="header__main">
+        <h1 class="header__title">We are creatives</h1>
+        <img src="./images/icon-arrow-down.svg" alt="arrow down" class="header__arrow">
+      </div>
+    </div>
+  </header>
+  
+  <main>
+
+    <section class="about" id="about">
+      
+      <div class="row row__reverse">
+        <div class="column">
+          <div class="about__img--primary box">
+            <picture>
+              <source media="(min-width: 750px)" srcset="./images/desktop/image-transform.jpg">
+              <img src="./images/mobile/image-transform.jpg" alt="egg" class="about__img--egg">
+            </picture>
+          </div>
+        </div>
+
+          <div class="about__information--container column box">
+            <div class="container center">
+              <div class="about__information--primary animation">
+                <h2 class="about__primary--title about__title">Transform your brand</h2>
+                <p class="about__primary--text about__text">We are a full-service creative agency specializing in helping brands grow fast. 
+                  Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                  <div class="about__link--container">
+                    <a href="#" class="about__primary--link about__link">Learn more</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+    <div class="row">
+      <div class="column">
+        <div class="about__img--secondary">
+          <picture>
+            <source media="(min-width: 750px)" srcset="./images/desktop/image-stand-out.jpg">
+            <img src="./images/mobile/image-stand-out.jpg" alt="egg" class="about__img--cup">
+          </picture>
+        </div>
+      </div>
+
+        <div class="about__information--container column">
+          <div class="container center">
+            <div class="about__information--secondary animation">
+                <h2 class="about__secondary--title about__title">Stand out to the right audience</h2>
+                <p class="about__secondary--text about__text">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, 
+                  we’ll build and extend your brand in digital places.</p>
+                <div class="about__link--container">
+                  <a href="#" class="about__secondary--link about__link">Learn more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="row">
+        <div class="column">
+          <div class="services__primary">
+            <div class="services__container container animation">
+              <h2 class="servives__primary--title services__title">Graphic design</h2>
+              <p class="services__primary--text services__text">Great design makes you memorable. We deliver artwork that underscores 
+                your brand message and captures potential clients’ attention.</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="column">
+          <div class="services__secondary">
+            <div class="services__container container animation">
+              <h2 class="servives__secondary--title services__title">Photography</h2>
+              <p class="services__secondary--text services__text">Increase your credibility by getting the most stunning, high-quality photos 
+                that improve your business image.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <secion class="reviews" id="reviews">
+      <h2 class="reviews__title">Client testimonials</h2>
+      <div class="row">
+        <div class="column">
+          <div class="reviews__primary animation">
+            <div class="center container">
+              <img src="./images/image-emily.jpg" alt="emily" class="reviews__primary--img reviews__img">
+                <p class="reviews__primary--text reviews__text">We put our trust in Sunnyside and they delivered, making sure our needs 
+                  were met and deadlines were always hit.</p>
+                  <h3 class="reviews__primary--name reviews__name">Emily R.</h3>
+                  <p class="reviews__primary--function reviews__function">Marketing Director</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="reviews__secondary animation">
+            <div class="center container">
+              <img src="./images/image-thomas.jpg" alt="thomas" class="reviews__secondary--img reviews__img">
+              <p class="reviews__secondary--text reviews__text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s 
+                success made it a satisfying and enjoyable experience.</p>
+              <h3 class="reviews__secondary--name reviews__name">Thomas S.</h3>
+              <p class="reviews__secondary--function reviews__function">Chief Operating Officer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="reviews__third animation">
+            <div class="center container">
+              <img src="./images/image-jennie.jpg" alt="jennie" class="reviews__third--img reviews__img">
+              <p class="reviews__third--text reviews__text">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+              <h3 class="reviews__third--name reviews__name">Jennie F.</h3>
+              <p class="reviews__third--function reviews__function">Business Owner</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </secion>
+
+    <section class="projects" id="projects">
+
+          <div class="projects__grid">
+            <div class="projects__milk project">
+              <picture>
+                <source media="(min-width: 750px)" srcset="./images/desktop/image-gallery-milkbottles.jpg"">
+                <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="milkbottles">
+              </picture>
+            </div>
+
+            <div class="project__orange_ project">
+              <picture>
+                <source media="(min-width: 750px)" srcset="./images/desktop/image-gallery-orange.jpg"">
+                <img src="./images/mobile/image-gallery-orange.jpg" alt="orange on plate">
+              </picture>
+            </div>
+          
+            <div class="projects__cone project">
+              <picture>
+                <source media="(min-width: 750px)" srcset="./images/desktop/image-gallery-cone.jpg"">
+                <img src="./images/mobile/image-gallery-cone.jpg" alt="cone">
+              </picture>
+            </div>
+            
+            <div class="project__sugar project">
+              <picture>
+                <source media="(min-width: 750px)" srcset="./images/desktop/image-gallery-sugarcubes.jpg"">
+                <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes">
+              </picture>
+            </div>
+          </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer__title--container">
+        <img src="./images/logo cyan.svg" alt="logo" class="footer__title">
+      </div>
+
+      <nav class="nav__footer">
+        <ul class="footer__list row">
+          <li class="footer__list--item nav__item"><a href="#about" class="footer__list--link nav__link footer__link">About</a></li>
+          <li class="footer__list--item nav__item"><a href="#services" class="footer__list--link nav__link footer__link">Services</a></li>
+          <li class="footer__list--item nav__item"><a href="#projects" class="footer__list--link nav__link footer__link">Projects</a></li>
+        </ul>
+      </nav>
+
+      <ul class="footer__socials" id="contact">
+        <li class="socials__item"><a href="#" class="socials__link"><img src="./images/icon-facebook.svg" alt="facebook" class="socials__logo--facebook"></a></li>
+        <li class="socials__item"><a href="#" class="socials__link"><img src="./images/icon-instagram.svg" alt="instagram" class="socials__logo--instagram"></a></li>
+        <li class="socials__item"><a href="#" class="socials__link"><img src="./images/icon-twitter.svg" alt="twitter" class="socials__logo--twitter"></a></li>
+        <li class="socials__item"><a href="#" class="socials__link"><img src="./images/icon-pinterest.svg" alt="pinterest" class="socials__logo--pinterest"></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script defer src="main.js"></script>
+</body>
+</html>
